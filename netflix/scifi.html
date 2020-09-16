@@ -1,0 +1,135 @@
+<html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<head>
+    <link rel="stylesheet" href="netflix.css">
+    <script type="text/javascript" src="netflix.js"></script>
+    <script type="text/javascript" src="translate.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+    <div id="divheader">
+        <button id="res" onclick="reset();"><span class="lang-text1"></span> </button>
+        <div id="cat">
+            <h2><a href="comedy.html"><span class="lang-text4"></a></h2>
+        </div>
+        <div id="cat">
+            <h2><a href="scifi.html"><span class="lang-text5"></a></h2>
+        </div id="cat">
+        <div id="cat">
+            <h2><a href="cartoon.html"><span class="lang-text6"></a></h2>
+        </div>
+        <div id="cat">
+            <h2><a href="action.html"><span class="lang-text7"></a></h2>
+        </div>
+        <!-- <div id="lang">EN</div>
+        <div id="lang"> RU</div> -->
+        <div id="lang">
+
+            <select id="country_select" onchange="loadsLanguage(this.value);">
+            </select>
+
+        </div>
+
+
+    </div>
+    <div id="divleft">
+
+        <div id="1" class="item">
+            <img src="pic/scifi/2049.jpg" alt="house"
+                onclick="document.getElementById('if1').src='https://www.youtube.com/embed/gCcx85zbxz4'">
+            <button onclick="delet('1');"><span class="lang-text2"> </button>
+            <button onclick="hide('1');"><span class="lang-text3"> </button>
+        </div>
+        <div id="2" class="item">
+            <img src="pic/scifi/gs.jpg" alt="house"
+                onclick="document.getElementById('if1').src='https://www.youtube.com/embed/d96cjJhvlMA'">
+            <button onclick="delet('2');"><span class="lang-text2"> </button>
+            <button onclick="hide('2');"><span class="lang-text3"> </button>
+        </div>
+        <div id="3" class="item">
+            <img src="pic/scifi/gt.jpg" alt="house"
+                onclick="document.getElementById('if1').src='https://www.youtube.com/embed/G4VmJcZR0Yg'">
+            <button onclick="delet('3');"><span class="lang-text2"> </button>
+            <button onclick="hide('3');"><span class="lang-text3"> </button>
+        </div>
+        <div id="4" class="item">
+            <img src="pic/scifi/im.jpg" alt="house"
+                onclick="document.getElementById('if1').src='https://www.youtube.com/embed/KAE5ymVLmZg'">
+            <button onclick="delet('4');"><span class="lang-text2"> </button>
+            <button onclick="hide('4');"><span class="lang-text3"> </button>
+        </div>
+        <div id="5" class="item">
+            <img src="pic/scifi/in.jpg" alt="house"
+                onclick="document.getElementById('if1').src='https://www.youtube.com/embed/zSWdZVtXT7E'">
+            <button onclick="delet('5');"><span class="lang-text2"> </button>
+            <button onclick="hide('5');"><span class="lang-text3"> </button>
+        </div>
+        <div id="6" class="item">
+            <img src="pic/scifi/jedi.jpg" alt="house"
+                onclick="document.getElementById('if1').src='https://www.youtube.com/embed/7L8p7_SLzvU'">
+            <button onclick="delet('6');"><span class="lang-text2"> </button>
+            <button onclick="hide('6');"><span class="lang-text3"> </button>
+        </div>
+        <div id="7" class="item">
+            <img src="pic/scifi/last.jpg" alt="house"
+                onclick="document.getElementById('if1').src='https://www.youtube.com/embed/Q0CbN8sfihY'">
+            <button onclick="delet('7');"><span class="lang-text2"> </button>
+            <button onclick="hide('7');"><span class="lang-text3"> </button>
+        </div>
+        <div id="8" class="item">
+            <img src="pic/scifi/mx.jpg" alt="house"
+                onclick="document.getElementById('if1').src='https://www.youtube.com/embed/hEJnMQG9ev8'">
+            <button onclick="delet('8');"><span class="lang-text2"> </button>
+            <button onclick="hide('8');"><span class="lang-text3"> </button>
+        </div>
+        <div id="9" class="item">
+            <img src="pic/scifi/sh.jpg" alt="house"
+                onclick="document.getElementById('if1').src='https://www.youtube.com/embed/XFYWazblaUA'">
+            <button onclick="delet('9');"><span class="lang-text2"> </button>
+            <button onclick="hide('9');"><span class="lang-text3"> </button>
+        </div>
+        <div id="10" class="item">
+            <img src="pic/scifi/t.jpg" alt="house"
+                onclick="document.getElementById('if1').src='https://www.youtube.com/embed/k64P4l2Wmeg'">
+            <button onclick="delet('10');"><span class="lang-text2"> </button>
+            <button onclick="hide('10');"><span class="lang-text3"> </button>
+        </div>
+        <div id="11" class="item">
+            <img src="pic/scifi/t2.jpg" alt="house"
+                onclick="document.getElementById('if1').src='https://www.youtube.com/embed/lwSysg9o7wE'">
+            <button onclick="delet('11');"><span class="lang-text2"> </button>
+            <button onclick="hide('11');"><span class="lang-text3"> </button>
+        </div>
+        <div id="12" class="item">
+            <img src="pic/scifi/tr.jpg" alt="house"
+                onclick="document.getElementById('if1').src='https://www.youtube.com/embed/ue80QwXMRHg'">
+            <button onclick="delet('12');"><span class="lang-text2"> </button>
+            <button onclick="hide('12');"><span class="lang-text3"> </button>
+        </div>
+
+
+    </div>
+
+    <div id="divright">
+        <iframe name="iframe1" id="if1" src="https://www.youtube.com/embed/gCcx85zbxz4" frameborder="1"></iframe>
+
+
+    </div>
+    <div id="footer">
+        &copy; #1995448 Aleksandr Mitrofanov
+    </div>
+</body>
+
+</html>
